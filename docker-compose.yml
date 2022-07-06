@@ -6,7 +6,7 @@ networks:
 
 services:
   uni-resolver-web:
-    image: universalresolver/uni-resolver-web:latest
+    image: rodopincha/uni-resolver-web:latest
     ports:
       - "8080:8080"
   driver-did-btcr:
@@ -200,3 +200,11 @@ services:
     image: alastria/uni-resolver-driver-did-alastria:mvp2
     ports:
       - "8130:8080"
+  driver-did-ada:
+    image: rodopincha/uni-resolver-driver-did-ada:latest
+    ports:
+      - "8131:8080"
+  driver-did-prism:
+    image: rodopincha/uni-resolver-driver-did-prism:latest
+    ports:
+      - "8132:8080"
